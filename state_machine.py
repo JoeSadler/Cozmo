@@ -98,8 +98,6 @@ class Search(State):
         #convert camera image to opencv format
         opencv_image = cv2.cvtColor(np.asarray(event.image), cv2.COLOR_RGB2GRAY)
 
-        
-
         #find the ball
         ball = find_ball.find_ball(opencv_image)
 
